@@ -1,40 +1,32 @@
 
 import java.util.Arrays;
-import java.util.List;
-
+import java.util.*;
+import java.util.Scanner;
 
 	
-	public class Main {
-
+	public class Main 
+	{
+		static Scanner scan = new Scanner(System.in);
+		
 		public static void main(String[] args)
 		{
-			List<A> lst = Arrays.asList(
-					new A(1, "Prince"),
-					new A(2, "Busi")
-					);
-			for(A i : lst) {
-				System.out.println(i);
-			}
+			
+			double money = 56.335;
+			
+			System.out.println("Please enter your name ");
+			String name = scan.next();
+			System.out.println(name + " Please know that you have R" + money+ " in your account");
+			
 		}
-
 	}
-
-	class A
-	{
-		private Integer id;
-		private String name;
-		public A(Integer id, String name) 
-		{
-			this.name = name;
-			this.id = id;
-		}
+	
+	class A{
+		static int i =5;
 		
 		public String toString() {
-			return " " + id + " __" + name  ;   
+			return "The one and only";
 		}
-		
-		
 	}
 
-
+	
 
